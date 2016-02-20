@@ -459,7 +459,7 @@ _emerge()
             opts="--alphabetical \
                 --ask --autounmask-write \
                 --buildpkg --buildpkgonly \
-                --changelog --clean --color=y --color=n --columns --complete-graph --config \
+                --changed-use --changelog --clean --color=y --color=n --columns --complete-graph --config \
                 --debug --deep --depclean --deselect=y --deselect=n \
                 --emptytree \
                 --fetch-all-uri --fetchonly \
@@ -484,7 +484,7 @@ _emerge()
             fi
         elif [[ ${cur} == -* ]]; then
             # Complete on short options.
-            opts="-B -D -G -K -N -O -a -b -d -e -f -g -k -l -n -o -p -q -t -u -v"
+            opts="-B -D -G -K -N -O -U -a -b -d -e -f -g -k -l -n -o -p -q -t -u -v"
             if [[ ${curword} -eq 1 ]] && [[ ${numwords} -eq 2 ]] ; then
                 opts="${opts} -h -S -V"
             fi
