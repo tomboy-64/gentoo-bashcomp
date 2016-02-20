@@ -419,7 +419,7 @@ _emerge()
             case "${action}" in
             -*C*) action='--unmerge' ;;
             -*P*) action='--prune' ;;
-            -*c*) action='--clean' ;;
+            -*c*) action='--depclean' ;;
             -*s*) action='--search' ;;
             esac
         fi
